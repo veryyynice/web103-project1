@@ -1,10 +1,10 @@
-# WEB103 Project 1 - web103-project1
+# WEB103 Project 2 - *Budget Destinations*
 
-Submitted by: Tom Strzyz
+Submitted by: **Tom Strzyz**
 
-About this web app: simple list app Listicle that displays 5 travel destinations, no frontend framework
+About this web app: **A community-driven listicle of the best budget travel destinations around the world. Users can browse destinations, view details, and add new places to the list. Data is stored in a PostgreSQL database hosted on Render.**
 
-Time spent: **3** hours
+Time spent: **X** hours
 
 ## Required Features
 
@@ -12,17 +12,14 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 - [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app displays a title**
-- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
-- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
-  - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [x] **The web app serves an appropriate 404 page when no matching route is defined**
-- [x] **The web app is styled using Picocss**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+  - [x] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+
 
 The following **optional** features are implemented:
 
-- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
+- [ ] The user can search for items by a specific attribute
 
 The following **additional** features are implemented:
 
@@ -30,18 +27,18 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-**Note: please be sure to 
-
 Here's a walkthrough of implemented required features:
-https://i.imgur.com/7BXFKZf.mp4
 
-<img src='https://i.imgur.com/5SV6erV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[https://imgur.com/a/34WQqpm](https://imgur.com/a/34WQqpm)
+
+<img src='https://i.imgur.com/6NKd7US.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  Add GIF tool here
+GIF created with ...  GIF tool here
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
-
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
@@ -49,7 +46,7 @@ Describe any challenges encountered while building the app or any additional con
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2025] [James]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

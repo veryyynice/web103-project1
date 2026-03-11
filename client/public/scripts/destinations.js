@@ -34,7 +34,7 @@ const renderDestinations = async () => {
 
       const price = document.createElement('p')
       price.className = 'price'
-      price.textContent = `${destination.pricePerDay}/day`
+      price.textContent = `${destination.price_per_day}/day`
 
       const audience = document.createElement('p')
       audience.className = 'audience'

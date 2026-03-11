@@ -21,12 +21,12 @@ const renderDestination = async () => {
     const audienceEl = document.getElementById('audience')
     audienceEl.innerHTML = `<span class="badge">${destination.audience}</span>`
 
-    document.getElementById('pricePerDay').textContent = `💰 Budget: ${destination.pricePerDay}/day`
-    document.getElementById('tripLength').textContent = `📅 Ideal trip: ${destination.tripLength}`
-    document.getElementById('bestFor').textContent = `✨ Best for: ${destination.bestFor}`
+    document.getElementById('pricePerDay').textContent = `💰 Budget: ${destination.price_per_day}/day`
+    document.getElementById('tripLength').textContent = `📅 Ideal trip: ${destination.trip_length}`
+    document.getElementById('bestFor').textContent = `✨ Best for: ${destination.best_for}`
     document.getElementById('description').textContent = destination.description
-    document.getElementById('submittedBy').textContent = `Submitted by: ${destination.submittedBy}`
-    document.getElementById('submittedOn').textContent = `Date: ${destination.submittedOn}`
+    document.getElementById('submittedBy').textContent = `Submitted by: ${destination.submitted_by}`
+    document.getElementById('submittedOn').textContent = `Date: ${destination.submitted_on}`
 
     document.title = `${destination.name} — Budget Destinations`
   } else {
