@@ -1,25 +1,33 @@
-# WEB103 Project 2 - *Budget Destinations*
+# WEB103 Project 3 - *Nomad Hub*
 
 Submitted by: **Tom Strzyz**
 
-About this web app: **A community-driven listicle of the best budget travel destinations around the world. Users can browse destinations, view details, and add new places to the list. Data is stored in a PostgreSQL database hosted on Render.**
+About this web app: **A virtual community space for digital nomads. Browse popular nomad cities around the world, click on a location to explore local events — from coworking meetups and language exchanges to outdoor adventures and community gatherings. Built with React and backed by a PostgreSQL database.**
 
-Time spent: **X** hours
+Time spent: **2** hours
 
 ## Required Features
 
 The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
-- [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
-  - [x] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
-  - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 
+- [x] **The web app uses React to display data from the API**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
+  - [x]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+- [x] **The web app displays a title.**
+- [x] **Website includes a visual interface that allows users to select a location they would like to view.**
+  - [x] *Note: A non-visual list of links to different locations is insufficient.* 
+- [x] **Each location has a detail page with its own unique URL.**
+- [x] **Clicking on a location navigates to its corresponding detail page and displays list of all events from the `events` table associated with that location.**
 
 The following **optional** features are implemented:
 
-- [ ] The user can search for items by a specific attribute
+- [ ] An additional page shows all possible events
+  - [ ] Users can sort *or* filter events by location.
+- [x] Events display a countdown showing the time remaining before that event
+  - [x] Events appear with different formatting when the event has passed (ex. negative time, indication the event has passed, crossed out, etc.).
 
 The following **additional** features are implemented:
 
@@ -29,9 +37,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-[https://imgur.com/a/34WQqpm](https://imgur.com/a/34WQqpm)
-
-<img src='https://i.imgur.com/6NKd7US.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/xQEqzZM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  GIF tool here
@@ -46,7 +52,7 @@ Describe any challenges encountered while building the app or any additional con
 
 ## License
 
-Copyright [2025] [James]
+Copyright [2026] [Tom Strzyz]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

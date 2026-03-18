@@ -2,24 +2,22 @@ import express from 'express'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import destinationsRouter from './routes/destinations.js'
+import eventsRouter from './routes/events.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const app = express()
 
-app.use('/public', express.static('./public'))
-app.use('/scripts', express.static('./public/scripts'))
+app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.get('/', (req, res) => {
-  res.status(200).send('<h1 style="text-align: center; margin-top: 50px;">Budget Destinations API</h1>')
-})
-
 app.use('/destinations', destinationsRouter)
+app.use('/events', eventsRouter)
 
-app.use((req, res) => {
-  res.status(404).sendFile(path.resolve(__dirname, 'public/404.html'))
+// Catch-all: serve React app for client-side routing
+app.get('/{*splat}', (_req, res) => {
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
 const PORT = process.env.PORT || 3001
