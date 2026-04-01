@@ -10,7 +10,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/destinations': { target: 'http://localhost:3001' },
-      '/events': { target: 'http://localhost:3001' }
+      '/events': { target: 'http://localhost:3001' },
+      '/api': { target: 'http://localhost:3001' }
     }
   }
 })

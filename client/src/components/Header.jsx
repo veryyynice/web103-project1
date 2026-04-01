@@ -10,7 +10,11 @@ export default function Header() {
           <img src="/logo.svg" alt="Nomad Hub logo" className="header-logo" />
           <span className="header-title">Nomad Hub</span>
         </div>
-        <button className="home-btn" onClick={() => navigate('/')}>Home</button>
+        <nav className="header-nav">
+          <button className="home-btn" onClick={() => navigate('/')}>Destinations</button>
+          <button className="home-btn" onClick={() => navigate('/trips')}>My Trips</button>
+          <button className="home-btn" onClick={() => navigate('/trips/new')}>+ Build Trip</button>
+        </nav>
       </div>
     </header>
   )

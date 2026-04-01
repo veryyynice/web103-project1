@@ -1,8 +1,8 @@
-# WEB103 Project 3 - *Nomad Hub*
+# WEB103 Project 4 - Nomad Hub Trip Planner
 
 Submitted by: **Tom Strzyz**
 
-About this web app: **A virtual community space for digital nomads. Browse popular nomad cities around the world, click on a location to explore local events — from coworking meetups and language exchanges to outdoor adventures and community gatherings. Built with React and backed by a PostgreSQL database.**
+About this web app: **A nomad trip customizer that lets users build and save personalized travel packages. Users choose from four key features — accommodation, food, transportation, and utilities/services — each with multiple options at different daily costs. The app dynamically calculates the total daily budget as options are selected and saves completed trip plans to a PostgreSQL database for viewing, editing, and deleting.**
 
 Time spent: **2** hours
 
@@ -11,23 +11,27 @@ Time spent: **2** hours
 The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
-
-- [x] **The web app uses React to display data from the API**
-- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - [x]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+- [x] **The web app uses React to display data from the API.**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured `CustomItem` table.**
+  - [x]  **NOTE: Your walkthrough added to the README must inc
+  lude a view of your Render dashboard demonstrating that your Postgres database is available**
   - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
-- [x] **The web app displays a title.**
-- [x] **Website includes a visual interface that allows users to select a location they would like to view.**
-  - [x] *Note: A non-visual list of links to different locations is insufficient.* 
-- [x] **Each location has a detail page with its own unique URL.**
-- [x] **Clicking on a location navigates to its corresponding detail page and displays list of all events from the `events` table associated with that location.**
+- [x] **Users can view **multiple** features of the `CustomItem` (e.g. car) they can customize, (e.g. wheels, exterior, etc.)**
+- [x] **Each customizable feature has multiple options to choose from (e.g. exterior could be red, blue, black, etc.)**
+- [x] **On selecting each option, the displayed visual icon for the `CustomItem` updates to match the option the user chose.**
+- [x] **The price of the `CustomItem` (e.g. car) changes dynamically as different options are selected *OR* The app displays the total price of all features.**
+- [x] **The visual interface changes in response to at least one customizable feature.**
+- [x] **The user can submit their choices to save the item to the list of created `CustomItem`s.**
+- [x] **If a user submits a feature combo that is impossible, they should receive an appropriate error message and the item should not be saved to the database.**
+- [x] **Users can view a list of all submitted `CustomItem`s.**
+- [x] **Users can edit a submitted `CustomItem` from the list view of submitted `CustomItem`s.**
+- [x] **Users can delete a submitted `CustomItem` from the list view of submitted `CustomItem`s.**
+- [x] **Users can update or delete `CustomItem`s that have been created from the detail page.**
+
 
 The following **optional** features are implemented:
 
-- [ ] An additional page shows all possible events
-  - [ ] Users can sort *or* filter events by location.
-- [x] Events display a countdown showing the time remaining before that event
-  - [x] Events appear with different formatting when the event has passed (ex. negative time, indication the event has passed, crossed out, etc.).
+- [ ] Selecting particular options prevents incompatible options from being selected even before form submission
 
 The following **additional** features are implemented:
 
@@ -37,7 +41,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://i.imgur.com/xQEqzZM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  GIF tool here
@@ -48,11 +52,16 @@ GIF created with ...  GIF tool here
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+The four customizable features of the nomad trip are:
+- **Accommodation**: Hostel, Airbnb, Hotel, Camping
+- **Food**: Street food, Restaurants, Groceries/cooking
+- **Transportation**: Walking/biking, Local bus, Rideshare, Car rental
+- **Utilities/Services**: None, SIM card only, Coworking space, SIM + Coworking
+
+An impossible combination (e.g. Camping + Coworking space) triggers a validation error and prevents saving.
 
 ## License
 
-Copyright [2026] [Tom Strzyz]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
